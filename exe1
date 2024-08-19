@@ -1,0 +1,23 @@
+numeros = []
+pares = []
+impares = []
+
+# Lê 20 números inteiros
+for i in range(20):
+    num = int(input(f"Digite o {i+1}º número inteiro: "))
+    numeros.append(num)
+    
+    # Verifica se o número é par ou ímpar e armazena no vetor correspondente
+    if (num % 2 == 0)
+    {
+        pares.append(num)
+    }
+    else
+    {
+        impares.append(num)
+    }
+
+# Imprime os três vetores
+print("\nVetor de todos os números:", numeros)
+print("Vetor de números pares:", pares)
+print("Vetor de números ímpares:", impares)

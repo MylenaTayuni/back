@@ -1,0 +1,27 @@
+def caixa_eletronico(valor):
+    # Verifica se o valor está dentro do limite permitido
+    if valor < 10 or valor > 600:
+        print("O valor do saque deve estar entre 10 e 600 reais.")
+        return
+
+    # Notas disponíveis
+    notas = [100, 50, 10, 5, 1]
+    distribuicao_notas = {}
+
+    # Calcular a quantidade de notas para cada valor
+    for nota in notas:
+        if valor >= nota:
+        {
+            quantidade = valor // nota
+            valor %= nota
+            distribuicao_notas[nota] = quantidade
+        }    
+
+    # Exibir o resultado
+    print("Você receberá:")
+    for nota, quantidade in distribuicao_notas.items():
+        print(f"{quantidade} nota(s) de {nota} reais.")
+
+# Solicita o valor do saque ao usuário
+valor_saque = int(input("Informe o valor do saque (entre 10 e 600 reais): "))
+caixa_eletronico(valor_saque)
